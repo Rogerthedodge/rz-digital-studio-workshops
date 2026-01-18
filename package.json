@@ -1,0 +1,17 @@
+{
+  "name": "rz-digital-studio-workshops",
+  "version": "1.0.0",
+  "description": "Workshop materials and resources for RZ Digital Studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "workshops",
+    "digital-design",
+    "development",
+    "training"
+  ],
+  "author": "RZ Digital Studio",
+  "license": "MIT"
+}
