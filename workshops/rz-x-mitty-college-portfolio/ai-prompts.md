@@ -1,5 +1,13 @@
 # AI Prompts for VS Code Agent - College Portfolio Workflow
 
+---
+
+## 📋 Prepare Data First
+
+Prepare your portfolio data: [Data Preparation Guide](https://docs.google.com/presentation/d/1WjZqbfxrw5fM_x9a-tRUB5aB0eholKdLBY0jazWy9j0/edit?slide=id.p1#slide=id.p1)
+
+---
+
 ## Prompt 1: Environment Setup
 
 ```
