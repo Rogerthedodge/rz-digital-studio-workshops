@@ -13,11 +13,76 @@ html {
 }
 
 body {
-  background-color: #0f172a;
-  color: #e2e8f0;
+  background-color: #ffffff;
+  color: #1f2937;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Smooth scrolling for anchor links */
+a[href^='#'] {
+  scroll-behavior: smooth;
+}
+
+/* Custom focus styles */
+:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Selection color */
+::selection {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Print styles for resume */
+@media print {
+  body {
+    background-color: white;
+    color: #1f2937;
+  }
+
+  .print\:hidden {
+    display: none !important;
+  }
+
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+
+  .print\:border-none {
+    border: none !important;
+  }
+
+  .print\:p-0 {
+    padding: 0 !important;
+  }
+
+  /* Remove unnecessary elements when printing */
+  button,
+  a[href*='mailto']:not([class*='resume']),
+  nav {
+    display: none;
+  }
+
+  /* Optimize spacing for print */
+  * {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Page breaks */
+  h2 {
+    page-break-after: avoid;
+  }
+
+  /* Keep content together */
+  .space-y-4 > * {
+    page-break-inside: avoid;
+  }
+}
+

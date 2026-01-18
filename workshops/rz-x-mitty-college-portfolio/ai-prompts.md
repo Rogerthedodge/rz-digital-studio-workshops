@@ -85,7 +85,8 @@ Website Requirements:
 Structure:
 1. Header/Navigation
    - Name and contact info
-   - Navigation menu (About, Experience, Projects, Contact)
+   - Navigation menu (About, Experience, Projects, Contact, Resume)
+   - Resume link that routes to /resume page
 
 2. Hero Section
    - Eye-catching introduction with identity DNA
@@ -123,6 +124,16 @@ Structure:
    - Social links (placeholder)
    - Copyright
 
+9. Resume Page
+   - Dedicated resume page at /resume route
+   - Professional resume layout with all candidate information
+   - Print-to-PDF button for easy download
+   - One-click PDF export (browser native)
+   - All resume sections: Contact, Summary, Education, Experience, Projects, Skills, Awards
+   - Print-optimized styling (hides buttons/nav in PDF)
+   - Mobile responsive resume page
+   - Back to Portfolio button
+
 Design Specifications:
 - Color Scheme: Minimalist White (white background, dark text, accent colors sparingly)
 - Typography: Clean, modern sans-serif fonts
@@ -137,6 +148,8 @@ Technical Implementation:
 - Implement smooth scrolling and navigation
 - Add responsive design for mobile, tablet, and desktop
 - Include proper semantic HTML
+- Integrate react-to-print library for PDF export functionality
+- Create print media queries for resume PDF optimization
 
 Files to Create:
 - pages/index.tsx (main page)
@@ -148,15 +161,18 @@ Files to Create:
 - components/ProjectsSection.tsx
 - components/LeadershipSection.tsx
 - components/Footer.tsx
+- components/Resume.tsx (Resume component with print button)
+- app/resume/page.tsx (Resume page route)
 - styles/globals.css (global Tailwind config)
 
 Output:
 - Fully functional prototype website
-- All sections rendering with provided data
+- All 9 sections rendering with provided data
 - Mobile-responsive design verified
 - Code follows best practices
+- Resume page fully functional with print-to-PDF capability
+- PDF exports with professional formatting
 - Ready for local development server testing
-- Git initialized with first commit
 ```
 
 ---
@@ -396,6 +412,8 @@ Each prompt is self-contained and assumes the previous steps have been completed
 - Generate and run necessary commands
 - Create and edit files as required
 - Test functionality before marking complete
+
+Test model: Claude Haiku 4.5 for fast speed.
 
 ### Manual Fallback
 If the AI workflow encounters issues or you prefer to work independently, use the **Manual Command List** section above to execute the same steps using your terminal directly.
