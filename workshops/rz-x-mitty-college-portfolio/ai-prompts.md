@@ -41,7 +41,7 @@ Output:
 ## Prompt 2: Create Portfolio Prototype Website
 
 ```
-Task: Build a prototype portfolio website for Alex Chen based on the provided data using React, Tailwind CSS, and Next.js.
+Task: Build a prototype portfolio website for Alex Chen (A Faked student) based on the provided data using React, Tailwind CSS, and Next.js.
 
 Provided Data:
 {
